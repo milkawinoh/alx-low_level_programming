@@ -7,9 +7,10 @@
  * Return: If n > 0 - the factorial of n.
  *         If n < 0 - 1 to indicate an error.
  */
+
 int factorial(int n)
 {
-	int fact = n;
+	int result = n;
 
 	if (n < 0)
 		return (-1);
@@ -19,5 +20,5 @@ int factorial(int n)
 
 	result *= factorial(n - 1);
 
-	return (fact);
+	return (result);
 }
